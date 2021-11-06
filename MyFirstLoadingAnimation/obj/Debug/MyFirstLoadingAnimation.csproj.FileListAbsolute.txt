@@ -8,3 +8,4 @@ D:\VISUAL STUDIO 2019\MyFirstLoadingAnimation\MyFirstLoadingAnimation\obj\Debug\
 D:\VISUAL STUDIO 2019\MyFirstLoadingAnimation\MyFirstLoadingAnimation\obj\Debug\MyFirstLoadingAnimation.csproj.CoreCompileInputs.cache
 D:\VISUAL STUDIO 2019\MyFirstLoadingAnimation\MyFirstLoadingAnimation\obj\Debug\MyFirstLoadingAnimation.exe
 D:\VISUAL STUDIO 2019\MyFirstLoadingAnimation\MyFirstLoadingAnimation\obj\Debug\MyFirstLoadingAnimation.pdb
+D:\VISUAL STUDIO 2019\MyFirstLoadingAnimation\MyFirstLoadingAnimation\obj\Debug\MyFirstLoadingAnimation.Form2.resources

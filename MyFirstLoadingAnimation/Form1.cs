@@ -17,5 +17,19 @@ namespace MyFirstLoadingAnimation
             InitializeComponent();
             LoadLabel.Parent = pictureBox1 ;
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            Hide();  // this will hide the loading screen
+            Form2 form = new Form2(); 
+            form.ShowDialog();
+            Close(); //this would close the loading screen
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,6 +29,7 @@ namespace MyFirstLoadingAnimation
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -75,6 +76,7 @@ namespace MyFirstLoadingAnimation
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LoadLabel = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -466,14 +468,21 @@ namespace MyFirstLoadingAnimation
             // 
             // LoadLabel
             // 
-            this.LoadLabel.AutoSize = true;
             this.LoadLabel.BackColor = System.Drawing.Color.Transparent;
+            this.LoadLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LoadLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoadLabel.Location = new System.Drawing.Point(152, 114);
+            this.LoadLabel.Location = new System.Drawing.Point(0, 0);
             this.LoadLabel.Name = "LoadLabel";
-            this.LoadLabel.Size = new System.Drawing.Size(486, 135);
+            this.LoadLabel.Size = new System.Drawing.Size(800, 450);
             this.LoadLabel.TabIndex = 47;
             this.LoadLabel.Text = "Loading";
+            this.LoadLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 8000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -528,6 +537,7 @@ namespace MyFirstLoadingAnimation
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -583,6 +593,7 @@ namespace MyFirstLoadingAnimation
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label LoadLabel;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
